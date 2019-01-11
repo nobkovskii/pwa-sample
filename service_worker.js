@@ -1,7 +1,8 @@
 // キャッシュファイルの指定
 var CACHE_NAME = 'pwa-sample-caches';
 var urlsToCache = [
-    '/nobkovskii.github.io/',
+    "https://nobkovskii.github.io/pwa-sample/",
+    "https://nobkovskii.github.io/pwa-sample/index.html"
 ];
 
 // インストール処理

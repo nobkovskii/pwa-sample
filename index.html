@@ -10,6 +10,16 @@
     <title>title</title>
     <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css">
     <link href="https://getbootstrap.com/docs/4.0/examples/starter-template/starter-template.css" rel="stylesheet">
+    <script>
+        <!-- service workerの登録関係 -->
+        if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service_worker.js').then(function(registration) {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }).catch(function(err) {
+            console.log('ServiceWorker registration failed: ', err);
+        });
+        }
+    </script>
   </head>
 
   <body>
@@ -52,13 +62,16 @@
         <h1>Bootstrap starter template</h1>
         <table class="table table-bordered">
             <tr>
-              <th>content.server_version</th>
+              <th>ほげ</th>
+              <td>ほげ</td>
             </tr>
             <tr>
-              <th>content.chain_id</th>
+              <th>ふー</th>
+              <td>ふふふ</td>
             </tr>
             <tr>
-              <th>content.head_block_num</th>
+              <th>ばー</th>
+              <td>か</td>
             </tr>
         </table>
         <p></p>
@@ -66,17 +79,6 @@
       </div>
     </div><!-- /.container -->
 
-
-    <script>
-        <!-- service workerの登録関係 -->
-        if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('service_worker.js').then(function(registration) {
-            console.log('ServiceWorker registration successful with scope: ', registration.scope);
-        }).catch(function(err) {
-            console.log('ServiceWorker registration failed: ', err);
-        });
-        }
-    </script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
