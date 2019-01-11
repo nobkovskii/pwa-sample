@@ -1,0 +1,51 @@
+#partner-list-wrapper {
+    position: relative;
+    text-align: center;
+}
+
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#partner-list {
+    padding: 0;
+}
+
+#partner-list>li {
+    margin: 10px;
+    position: relative;
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    list-style-type: none;
+    cursor: pointer;
+    z-index: 20000;
+}
+
+#partner-list .partner-sprite {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+}
+
+#partner-list li span {
+  color: white;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  position: absolute;
+  text-align: center;
+  pointer-events: none;
+}

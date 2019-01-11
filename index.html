@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <!-- manifest -->
     <link rel="manifest" href="manifest.json">
     <title>title</title>
+    <link rel="stylesheet" href="master.css">
     <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css">
     <link href="https://getbootstrap.com/docs/4.0/examples/starter-template/starter-template.css" rel="stylesheet">
+
+    </script>
     <script>
         <!-- service workerの登録関係 -->
         if ('serviceWorker' in navigator) {
@@ -55,29 +59,34 @@
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
       </div>
-    </nav>
+    </nav><!-- /.navbar -->
 
     <div class="container">
       <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <table class="table table-bordered">
-            <tr>
-              <th>ほげ</th>
-              <td>ほげ</td>
-            </tr>
-            <tr>
-              <th>ふー</th>
-              <td>ふふふ</td>
-            </tr>
-            <tr>
-              <th>ばー</th>
-              <td>か</td>
+        <h1 id="app">{{ message }}</h1>
+        <table class="table table-bordered" id="table-id">
+            <tr v-for="t in tables">
+              <th>{{ t.th }}</th>
+              <td>{{ t.td }}</td>
             </tr>
         </table>
         <p></p>
         <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
       </div>
     </div><!-- /.container -->
+
+    <div class="container partner-list-wrapper" id="users">
+      <ul id="partner-list">
+        <li v-for="u in users" style="background: linear-gradient(90deg, #78C850 50%, #A040A0 50%)">
+          <button type="button" class="partner-sprite"></button>
+          <span>{{ u.no }} : {{ u.name }}</span>
+        </li>
+      </ul>
+    </div><!-- /.container -->
+
+    <!-- VueJS -->
+    <script src="https://unpkg.com/vue"></script>
+    <script src="app.js"></script>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
