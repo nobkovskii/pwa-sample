@@ -1,24 +1,3 @@
-// import u from '../assets/data.json';
-
-new Vue({
-  // #app 要素に対して Vue を適用する
-  el: '#app',
-
-  // message という名前のデータを定義する
-  data: { message: 'Hello world!' }
-})
-
-new Vue({
-  el: '#table-id',
-  data: {
-    tables: [
-      { th: 'aa',td:'AA'},
-      { th: 'bb',td:'BB'},
-      { th: 'cc',td:'CC'}
-    ]
-  }
-})
-
 new Vue({
   el: '#users',
   data: {

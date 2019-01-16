@@ -50,6 +50,17 @@
       </div>
     </nav><!-- /.navbar -->
 
+    <div class="container partner-list-wrapper" id="users">
+      <ul id="partner-list">
+        <li v-for="u in activeUsers" :key="u.no" style="background: linear-gradient(white)">
+          <button id="demo" type="button" class="partner-sprite" data-toggle="modal" data-target="#userDetail" v-bind:data-whatever="JSON.stringify(u)">
+            <img :src="u.img" />
+          </button>
+          <span>{{ u.no }} : {{ u.name }}</span>
+        </li>
+      </ul>
+    </div><!-- /.container -->
+
     <!-- Modal -->
     <div class="modal fade" id="userDetail" data-backdrop="static" 　tabindex="-1" role="dialog" aria-labelledby="userDetailTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
