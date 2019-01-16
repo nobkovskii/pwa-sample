@@ -1,0 +1,22 @@
+[
+  { "no": "0001","name":"横田 隆二","kana":"ヨコタ リュウジ","isActive":true,"message":"よろしく","dept":"社長","img":"image/0001.jpg"},
+  { "no": "0002","name":"秋葉 花子","kana":"アキバ ハナコ","isActive":true,"message":"よろ","dept":"部長","img":"image/0002.jpg"},
+  { "no": "0003","name":"津田 朗","kana":"ツダ アキラ","isActive":true,"message":"よろし","dept":"課長","img":"image/0003.jpg"},
+  { "no": "0004","name":"藤谷 菜々美","kana":"フジタニ ナナミ","isActive":true,"message":"よろし","dept":"営業","img":"image/0004.jpg"},
+  { "no": "0005","name":"菅 公男","kana":"カン キミオ","isActive":true,"message":"よろし","dept":"開発","img":"image/0005.jpg"},
+  { "no": "0006","name":"小島 敬子","kana":"オジマ ケイコ","isActive":true,"message":"よろし","dept":"開発","img":"image/0006.jpg"},
+  { "no": "0007","name":"佐久間 清茂","kana":"サクマ キヨシ","isActive":true,"message":"よろし","dept":"開発","img":"image/0007.jpg"},
+  { "no": "0008","name":"阿部 憲一","kana":"アベ ケンイチ","isActive":false,"message":"よろし","dept":"開発","img":"image/0008.jpg"},
+  { "no": "0009","name":"西村 康生","kana":"ニシムラ ヤスオ","isActive":true,"message":"よろし","dept":"開発","img":"image/0005.jpg"},
+  { "no": "0010","name":"北原 里穂","kana":"キタハラ リホ","isActive":true,"message":"よろし","dept":"開発","img":"image/0005.jpg"},
+  { "no": "0011","name":"今井 千秋","kana":"イマイ チアキ","isActive":true,"message":"よろし","dept":"開発","img":"image/0005.jpg"},
+  { "no": "0012","name":"亀田 音羽","kana":"カメダ オトハ","isActive":true,"message":"よろし","dept":"開発","img":"image/0005.jpg"},
+  { "no": "0013","name":"庄司 琴葉","kana":"ショウジ コトハ","isActive":true,"message":"よろし","dept":"開発","img":"image/0005.jpg"},
+  { "no": "0014","name":"川島 瑞稀","kana":"カワシマ ミズキ","isActive":true,"message":"よろし","dept":"開発","img":"image/0005.jpg"},
+  { "no": "0015","name":"三原 義郎","kana":"ミハラ ヨシロウ","isActive":true,"message":"よろし","dept":"開発","img":"image/0005.jpg"},
+  { "no": "0016","name":"大下 英樹","kana":"オオシタ ヒデキ","isActive":true,"message":"よろし","dept":"開発","img":"image/0005.jpg"},
+  { "no": "0017","name":"田原 佳乃","kana":"タワラ ヨシノ","isActive":true,"message":"よろし","dept":"開発","img":"image/0005.jpg"},
+  { "no": "0018","name":"高木 希美","kana":"タカギ キミ","isActive":true,"message":"よろし","dept":"開発","img":"image/0005.jpg"},
+  { "no": "0019","name":"浅野 勇治","kana":"アサノ ユウジ","isActive":true,"message":"よろし","dept":"開発","img":"image/0005.jpg"},
+  { "no": "0020","name":"半田 十三","kana":"ハンダ ジュウゾウ","isActive":true,"message":"よろし","dept":"開発","img":"image/0005.jpg"}
+]

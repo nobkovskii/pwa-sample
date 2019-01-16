@@ -12,22 +12,7 @@
     <link rel="stylesheet" href="master.css">
     <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css">
     <link href="https://getbootstrap.com/docs/4.0/examples/starter-template/starter-template.css" rel="stylesheet">
-
-    </script>
-    <script>
-        <!-- service workerの登録関係 -->
-        if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('service_worker.js')
-        .then(registration => {
-            registration.onupdatefound = function(){
-              console.log('ServiceWorker registration successful with scope: ', registration.scope);
-              registration.update();
-            }
-        }).catch(function(err) {
-            console.log('ServiceWorker registration failed: ', err);
-        });
-        }
-    </script>
+    <script src="js/main.js"></script>
   </head>
 
   <body>
@@ -90,7 +75,7 @@
 
     <!-- VueJS -->
     <script src="https://unpkg.com/vue"></script>
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
