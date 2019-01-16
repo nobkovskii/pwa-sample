@@ -25,7 +25,7 @@ new Vue({
       users: []
   },
   created: function(){
-    axios.get("../assets/data.json").then(function(res){
+    axios.get("assets/data.json").then(function(res){
       console.log(res)
       this.users = res.data
     }.bind(this)).catch(function(e){
