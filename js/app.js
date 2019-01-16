@@ -1,14 +1,14 @@
 new Vue({
   el: '#users',
   data: {
-      users: []
+    users: []
   },
-  created: function(){
-    axios.get("assets/data.json").then(function(res){
+  created: function() {
+    axios.get("assets/data.json").then(function(res) {
       console.log(res.data)
       console.log(this.users)
       this.users = res.data
-    }.bind(this)).catch(function(e){
+    }.bind(this)).catch(function(e) {
       console.error(e);
     })
   },
@@ -28,8 +28,8 @@ new Vue({
   // },
   // isActive で filterを設定
   computed: {
-    activeUsers: function(){
-      return this.users.filter(function(u){
+    activeUsers: function() {
+      return this.users.filter(function(u) {
         return u.isActive == true
       })
     }

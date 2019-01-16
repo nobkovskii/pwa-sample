@@ -1,26 +1,26 @@
 // キャッシュファイルの指定
-var CACHE_NAME = 'pwa-sample-caches_0004;
+var CACHE_NAME = 'pwa-sample-caches_0005';
 var urlsToCache = [
-    "/",
-    "index.html",
-    "offline.html",
-    "js/app.js",
-    "js/main.js",
-    "image/*",
-    "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js",
-    "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js",
-    "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+  "/",
+  "index.html",
+  "offline.html",
+  "js/app.js",
+  "js/main.js",
+  "image/*",
+  "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js",
+  "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js",
+  "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
 ];
 
 // インストール処理
 self.addEventListener('install', function(event) {
-    event.waitUntil(
-        caches
-            .open(CACHE_NAME)
-            .then(function(cache) {
-                return cache.addAll(urlsToCache);
-            })
-    );
+  event.waitUntil(
+    caches
+    .open(CACHE_NAME)
+    .then(function(cache) {
+      return cache.addAll(urlsToCache);
+    })
+  );
 });
 
 // 新しいバージョンがインストールされた時に、過去バージョンを削除する
@@ -41,13 +41,13 @@ self.addEventListener('activate', event => {
 
 // リソースフェッチ時のキャッシュロード処理
 self.addEventListener('fetch', function(event) {
-    event.respondWith(
-        caches
-            .match(event.request)
-            .then(function(response) {
-                return response ? response : fetch(event.request);
-            })
-    );
+  event.respondWith(
+    caches
+    .match(event.request)
+    .then(function(response) {
+      return response ? response : fetch(event.request);
+    })
+  );
 });
 
 // self.addEventListener('fetch', function(event) {
