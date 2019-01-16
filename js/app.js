@@ -26,7 +26,8 @@ new Vue({
   },
   created: function(){
     axios.get("assets/data.json").then(function(res){
-      console.log(res)
+      console.log(res.data)
+      console.log(this.users)
       this.users = res.data
     }.bind(this)).catch(function(e){
       console.error(e);
